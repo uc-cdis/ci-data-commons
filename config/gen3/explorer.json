@@ -47,7 +47,7 @@
         "rightIcon": "download"
       }
     ],
-    "loginForDownload": true,
+    "loginForDownload": false,
     "guppyConfig": {
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
@@ -106,7 +106,7 @@
         "file_size",
         "object_id"      ]
     },
-    "loginForDownload": true,
+    "loginForDownload": false,
     "guppyConfig": {
       "dataType": "file",
       "fieldMapping": [
@@ -259,7 +259,7 @@
           "rightIcon": "download"
           }
       ],
-      "loginForDownload": true,
+      "loginForDownload": false,
       "guppyConfig": {
           "dataType": "imaging_study",
           "nodeCountTitle": "Imaging Studies",
