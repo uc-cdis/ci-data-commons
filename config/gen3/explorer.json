@@ -82,11 +82,11 @@
   {
     "tabTitle": "File",
     "charts": {
-      "data_type": {
+      "file_type": {
         "chartType": "stackedBar",
         "title": "File Type"
       },
-      "data_format": {
+      "file_format": {
         "chartType": "stackedBar",
         "title": "File Format"
       }
@@ -109,6 +109,12 @@
     },
     "table": {
       "enabled": true,
+      "detailsConfig": {
+        "panel": "fileDetails",
+        "mode": "click",
+        "idField": "file_name",
+        "title": "File Details"
+      },
       "fields": [
         "project_id",
         "file_name",
