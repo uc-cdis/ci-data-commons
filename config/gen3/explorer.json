@@ -24,7 +24,11 @@
       "fields": [
         "project_id",
         "data_format"
-      ]
+      ],
+      "detailsConfig": {
+        "mode": "expand",
+        "panelContainer": "drawer"
+      }
     },
     "dropdowns": {
       "download": {
