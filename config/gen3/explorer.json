@@ -65,8 +65,8 @@
         { "field": "data_format", "name": "Data Format" },
       ],
       "manifestMapping": {
-        "resourceIndexType": "file",
-        "resourceIdField": "object_id",
+        "resourceIndexType": "subject",
+        "resourceIdField": "project_id",
         "referenceIdFieldInResourceIndex": "_subject_id",
         "referenceIdFieldInDataIndex": "_subject_id"
       },
