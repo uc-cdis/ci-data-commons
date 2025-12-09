@@ -185,9 +185,6 @@
           "tabs": [
           {
               "title": "Study Properties",
-              "searchFields": [
-              "study_uid"
-              ],
               "fields": [
               "study_modality",
               "study_description",
@@ -204,18 +201,30 @@
       },
       "table": {
           "enabled": true,
+          "pageLimit": {
+            "limit": 10000,
+            "label": "Maximum of 10,000 Total Records. Records per Page:"
+          },
           "fields": [
             "submitter_id",
             "study_uid",
             "case_ids",
-            "object_id",
             "project_id"
           ],
-          "dicomViewerId": "submitter_id",
-          "dicomViewerUrl": "ohif-viewer",
-          "linkFields": [
-            "submitter_id"
-          ]
+          "columns": {
+            "submitter_id": {
+              "title": "Browse in DICOM viewer"
+            },
+            "study_uid": {
+              "title": "Study UID"
+            },
+            "case_ids": {
+              "title": "Patient ID"
+            },
+            "project_id": {
+              "title": "Project ID"
+            }
+          }
       },
       "dropdowns": {
         "download-table": {
@@ -305,9 +314,9 @@
             "useFilterForCounts": false
           },
           "accessibleFieldCheckList": [
-          "project_id"
+            "authz"
           ],
-          "accessibleValidationField": "project_id"
+          "accessibleValidationField": "auth_resource_path"
       }
   }
 ]
