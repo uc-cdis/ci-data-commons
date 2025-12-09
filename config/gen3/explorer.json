@@ -1,5 +1,4 @@
-{
-  "explorerConfig" : [
+[
   {
     "tabTitle": "Data",
     "charts": {
@@ -62,11 +61,8 @@
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
       "fieldMapping": [
-        { "field": "disease_id", "name": "Disease ID" },
-        { "field": "age_of_onset", "name": "Age of Onset" },
-        { "field": "project_dbgap_accession_number", "name": "Project dbGaP Accession Number" },
-        { "field": "project_dbgap_consent_text", "name":"Project dbGaP Consent Text"},
-        { "field": "project_dbgap_phs", "name":"Project dbGaP Phs"}
+        { "field": "project_id", "name": "Project Id" },
+        { "field": "data_format", "name": "Data Format" },
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
@@ -186,6 +182,9 @@
           "tabs": [
           {
               "title": "Study Properties",
+              "searchFields": [
+              "study_uid"
+              ],
               "fields": [
               "study_modality",
               "study_description",
@@ -308,4 +307,3 @@
       }
   }
 ]
-}
