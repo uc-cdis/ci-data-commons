@@ -62,7 +62,7 @@
       "nodeCountTitle": "Subjects",
       "fieldMapping": [
         { "field": "project_id", "name": "Project Id" },
-        { "field": "data_format", "name": "Data Format" },
+        { "field": "data_format", "name": "Data Format" }
       ],
       "manifestMapping": {
         "resourceIndexType": "subject",
