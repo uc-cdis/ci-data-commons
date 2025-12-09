@@ -96,7 +96,7 @@
         { "field": "submitter_id", "name":"Submitter Id"}
       ],
       "manifestMapping": {
-        "resourceIndexType": "file",
+        "resourceIndexType": "subject",
         "resourceIdField": "project_id",
         "referenceIdFieldInResourceIndex": "_subject_id",
         "referenceIdFieldInDataIndex": "_subject_id"
