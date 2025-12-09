@@ -185,9 +185,6 @@
           "tabs": [
           {
               "title": "Study Properties",
-              "searchFields": [
-              "study_uid"
-              ],
               "fields": [
               "study_modality",
               "study_description",
