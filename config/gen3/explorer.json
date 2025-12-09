@@ -1,4 +1,5 @@
-[
+{
+  "explorerConfig" : [
   {
     "tabTitle": "Data",
     "charts": {
@@ -307,3 +308,4 @@
       }
   }
 ]
+}
