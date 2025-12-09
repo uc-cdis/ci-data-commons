@@ -61,12 +61,15 @@
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
       "fieldMapping": [
-        { "field": "project_id", "name": "Project Id" },
-        { "field": "data_format", "name": "Data Format" }
+        { "field": "disease_id", "name": "Disease ID" },
+        { "field": "age_of_onset", "name": "Age of Onset" },
+        { "field": "project_dbgap_accession_number", "name": "Project dbGaP Accession Number" },
+        { "field": "project_dbgap_consent_text", "name":"Project dbGaP Consent Text"},
+        { "field": "project_dbgap_phs", "name":"Project dbGaP Phs"}
       ],
       "manifestMapping": {
-        "resourceIndexType": "subject",
-        "resourceIdField": "project_id",
+        "resourceIndexType": "file",
+        "resourceIdField": "object_id",
         "referenceIdFieldInResourceIndex": "_subject_id",
         "referenceIdFieldInDataIndex": "_subject_id"
       },
@@ -215,10 +218,48 @@
           ]
       },
       "dropdowns": {
-          "download-table": {
-          "title": "Download Table"
+      "download-table": {
+        "title": "Download Table",
+        "leftIcon": "gen3:download",
+        "rightIcon": "gen3:chevron-down",
+        "dropdownItems": [
+          {
+            "enabled": true,
+            "type": "data-json",
+            "title": "JSON",
+            "leftIcon": "datafile",
+            "rightIcon": "download",
+            "action": "data-json",
+            "actionArgs" : {
+              "filename": "Imaging_Studies_table.json",
+              "rootPath": "gen3_discovery"
+            }
+          },
+          {
+            "enabled": true,
+            "type": "data-tsv",
+            "title": "CSV",
+            "leftIcon": "datafile",
+            "rightIcon": "download",
+            "action": "data-tsv",
+            "actionArgs" : {
+              "filename": "Imaging_Studies_table.tsv"
+            }
+          },
+          {
+            "enabled": true,
+            "type": "data-csv",
+            "title": "CSV",
+            "leftIcon": "datafile",
+            "rightIcon": "download",
+            "action": "data-csv",
+            "actionArgs" : {
+              "filename": "Imaging_Studies_table.csv"
+            }
           }
-      },
+        ]
+      }
+    },
       "buttons": [
           {
           "enabled": true,
@@ -271,7 +312,7 @@
           "rightIcon": "download"
           }
       ],
-      "loginForDownload": false,
+      "loginForDownload": true,
       "guppyConfig": {
           "dataType": "imaging_study",
           "nodeCountTitle": "Imaging Studies",
