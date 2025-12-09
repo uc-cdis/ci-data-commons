@@ -307,11 +307,10 @@
           }
           ],
           "manifestMapping": {
-            "resourceIndexType": "data_file",
+            "resourceIndexType": "imaging_study",
             "resourceIdField": "submitter_id",
             "referenceIdFieldInResourceIndex": "_imaging_study_id",
-            "referenceIdFieldInDataIndex": "_imaging_study_id",
-            "useFilterForCounts": false
+            "referenceIdFieldInDataIndex": "_imaging_study_id"
           },
           "accessibleFieldCheckList": [
             "authz"
