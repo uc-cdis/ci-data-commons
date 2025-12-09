@@ -225,7 +225,7 @@
           "dropdownItems": [
             {
               "enabled": true,
-              "type": "data-json",
+              "action": "data-json",
               "title": "JSON",
               "leftIcon": "datafile",
               "rightIcon": "download",
@@ -235,7 +235,7 @@
             },
             {
               "enabled": true,
-              "type": "data-tsv",
+              "action": "data-tsv",
               "title": "TSV",
               "leftIcon": "datafile",
               "rightIcon": "download",
@@ -245,7 +245,7 @@
             },
             {
               "enabled": true,
-              "type": "data-csv",
+              "action": "data-csv",
               "title": "CSV",
               "leftIcon": "datafile",
               "rightIcon": "download",
