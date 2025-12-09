@@ -1,4 +1,5 @@
 {
+  "enableAuthz": false,
   "routes": {
     "/DataLibrary": {
       "loginRequired": false
