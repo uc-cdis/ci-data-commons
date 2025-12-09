@@ -33,7 +33,15 @@
       "fields": [
         "project_id",
         "data_format"
-      ]
+      ],
+      "columns": {
+        "project_id": {
+          "title": "Project Id"
+        },
+        "data_format": {
+          "title": "Data Format"
+        }
+      }
     },
     "dropdowns": {
       "download": {
@@ -61,15 +69,35 @@
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
       "fieldMapping": [
-        { "field": "disease_id", "name": "Disease ID" },
-        { "field": "age_of_onset", "name": "Age of Onset" },
-        { "field": "project_dbgap_accession_number", "name": "Project dbGaP Accession Number" },
-        { "field": "project_dbgap_consent_text", "name":"Project dbGaP Consent Text"},
-        { "field": "project_dbgap_phs", "name":"Project dbGaP Phs"}
+        { "field": "_aggregated_genotyping_arrays_count", "name": "Aggregated Genotyping Arrays Count" },
+        { "field": "_aliquots_count", "name": "Aliquots Count" },
+        { "field": "_copy_number_estimates_count", "name": "Copy Number Estimates Count" },
+        { "field": "_copy_numer_segments_count", "name":"Copy Numer Segments Count"},
+        { "field": "_genotyping_arrays_count", "name":"Genotyping Arrays Count"},
+        { "field": "_mRNA_microarrays_count", "name": "mRNA Microarrays Count" },
+        { "field": "_read_groups_count", "name": "Read Groups Count" },
+        { "field": "_samples_count", "name": "Samples Count" },
+        { "field": "_submitted_aligned_reads_count", "name":"Submitted Aligned Reads Count"},
+        { "field": "_submitted_genomic_profiles_count", "name":"Submitted Genomic Profiles Count"},
+        { "field": "_submitted_methylations_count", "name": "Submitted Methylations Count" },
+        { "field": "_submitted_unaligned_reads_count", "name": "Submitted Unaligned Reads Count" },
+        { "field": "_tangent_copy_numbers_count", "name": "Tangent Copy Numbers Count" },
+        { "field": "auth_resource_path", "name":"Auth Resource Path"},
+        { "field": "breed", "name":"Breed"},
+        { "field": "data_format", "name": "Data Format" },
+        { "field": "data_type", "name": "Data Type" },
+        { "field": "disease_type", "name": "Disease Type" },
+        { "field": "file_id", "name":"File Id"},
+        { "field": "gender", "name":"Gender"},
+        { "field": "node_id", "name": "Node Id" },
+        { "field": "primary_site", "name": "Primary Site" },
+        { "field": "project_id", "name": "Project Id" },
+        { "field": "_subject_id", "name":"Subject Id"},
+        { "field": "submitter_id", "name":"Submitter Id"}
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
-        "resourceIdField": "object_id",
+        "resourceIdField": "project_id",
         "referenceIdFieldInResourceIndex": "_subject_id",
         "referenceIdFieldInDataIndex": "_subject_id"
       },
@@ -289,22 +317,22 @@
           "dataType": "imaging_study",
           "nodeCountTitle": "Imaging Studies",
           "fieldMapping": [
-          {
-              "field": "project_id",
-              "name": "Project ID"
-          },
-          {
-              "field": "study_uid",
-              "name": "Study UID"
-          },
-          {
-              "field": "submitter_id",
-              "name": "Browse in DICOM viewer"
-          },
-          {
-              "field": "case_ids",
-              "name": "Patient ID"
-          }
+            {
+                "field": "project_id",
+                "name": "Project ID"
+            },
+            {
+                "field": "study_uid",
+                "name": "Study UID"
+            },
+            {
+                "field": "submitter_id",
+                "name": "Browse in DICOM viewer"
+            },
+            {
+                "field": "case_ids",
+                "name": "Patient ID"
+            }
           ],
           "manifestMapping": {
             "resourceIndexType": "imaging_study",
