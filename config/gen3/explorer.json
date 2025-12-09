@@ -218,48 +218,47 @@
           ]
       },
       "dropdowns": {
-      "download-table": {
-        "title": "Download Table",
-        "leftIcon": "gen3:download",
-        "rightIcon": "gen3:chevron-down",
-        "dropdownItems": [
-          {
-            "enabled": true,
-            "type": "data-json",
-            "title": "JSON",
-            "leftIcon": "datafile",
-            "rightIcon": "download",
-            "action": "data-json",
-            "actionArgs" : {
-              "filename": "Imaging_Studies_table.json",
-              "rootPath": "gen3_discovery"
+        "download-table": {
+          "title": "Download Table",
+          "leftIcon": "gen3:download",
+          "rightIcon": "gen3:chevron-down",
+          "dropdownItems": [
+            {
+              "enabled": true,
+              "type": "data-json",
+              "title": "JSON",
+              "dropdownId": "download-table",
+              "leftIcon": "datafile",
+              "rightIcon": "download",
+              "actionArgs": {
+                "filename": "Imaging_Studies_table.json"
+              }
+            },
+            {
+              "enabled": true,
+              "type": "data-tsv",
+              "title": "TSV",
+              "dropdownId": "download-table",
+              "leftIcon": "datafile",
+              "rightIcon": "download",
+              "actionArgs": {
+                "filename": "Imaging_Studies_table.tsv"
+              }
+            },
+            {
+              "enabled": true,
+              "type": "data-csv",
+              "title": "CSV",
+              "dropdownId": "download-table",
+              "leftIcon": "datafile",
+              "rightIcon": "download",
+              "actionArgs": {
+                "filename": "Imaging_Studies_table.csv"
+              }
             }
-          },
-          {
-            "enabled": true,
-            "type": "data-tsv",
-            "title": "CSV",
-            "leftIcon": "datafile",
-            "rightIcon": "download",
-            "action": "data-tsv",
-            "actionArgs" : {
-              "filename": "Imaging_Studies_table.tsv"
-            }
-          },
-          {
-            "enabled": true,
-            "type": "data-csv",
-            "title": "CSV",
-            "leftIcon": "datafile",
-            "rightIcon": "download",
-            "action": "data-csv",
-            "actionArgs" : {
-              "filename": "Imaging_Studies_table.csv"
-            }
-          }
-        ]
-      }
-    },
+          ]
+        }
+      },
       "buttons": [
           {
           "enabled": true,
