@@ -21,12 +21,6 @@
     },
     "table": {
       "enabled": true,
-      "detailsConfig": {
-        "panel": "default",
-        "mode" : "click",
-        "idField": "submitter_id",
-        "title": "Row Details"
-      },
       "pageLimit": {
         "limit": 10000
       },
@@ -96,8 +90,8 @@
         { "field": "submitter_id", "name":"Submitter Id"}
       ],
       "manifestMapping": {
-        "resourceIndexType": "subject",
-        "resourceIdField": "project_id",
+        "resourceIndexType": "file",
+        "resourceIdField": "object_id",
         "referenceIdFieldInResourceIndex": "_subject_id",
         "referenceIdFieldInDataIndex": "_subject_id"
       },
