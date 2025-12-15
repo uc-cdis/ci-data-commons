@@ -5,7 +5,8 @@
       "loginRequired": false
     },
     "/Workspace": {
-      "loginRequired": false
+      "loginRequired": false,
+      "authz": ["/workspace"]
     },
     "/Profile": {
       "loginRequired": false
