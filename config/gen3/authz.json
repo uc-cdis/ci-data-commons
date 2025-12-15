@@ -4,10 +4,6 @@
     "/DataLibrary": {
       "loginRequired": false
     },
-    "/Workspace": {
-      "loginRequired": false,
-      "authz": ["/workspace"]
-    },
     "/Profile": {
       "loginRequired": false
     },
