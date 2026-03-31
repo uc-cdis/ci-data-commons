@@ -29,7 +29,12 @@
           "downloadManifestButtonText": "Download",
           "enableDownloadManifest": false,
           "downloadZipButtonText": "Download Zip",
-          "enableDownloadZip": true
+          "downloadManifestButtonText": "Download Manifest",
+          "documentationLinks": {
+            "gen3Client": "https://docs.gen3.org/gen3-resources/tools/data-client/",
+            "gen3Workspaces": "https://docs.gen3.org/gen3-resources/user-guide/analyze-data/"
+          },
+          "verifyExternalLogins": true
         },
         "pageTitle": {
           "enabled": false
